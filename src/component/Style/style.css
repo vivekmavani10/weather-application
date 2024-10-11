@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2021/05/01/09/59/city-6220689_1280.jpg");
+  background-size: cover;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 70% 35%;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  height: calc(
+    100vh - 120px
+  ); /* Reduced height to create more room for margin */
+  margin: 60px 400px; /* Increased top and bottom margin to 60px */
+}
+
+.first {
+  background-image: url("https://cdn.pixabay.com/photo/2018/05/20/22/55/thunderstorm-3417042_1280.jpg");
+  background-size: cover;
+  height: 100%;
+  width: auto;
+  color: white;
+}
+
+.country-name {
+  text-align: right;
+}
+
+.date-time-temp {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  margin: 10px 30px;
+  gap: 90px;
+  margin-bottom: 40px;
+}
+
+.date-time {
+  position: relative;
+  left: 0;
+}
+
+.temp {
+  position: relative;
+  right: 0;
+}
+
+.second {
+  background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+  color: white;
+  height: 100%;
+  width: auto;
+  background-blend-mode: multiply; /* Adjust blending mode as needed */
+  text-align: center;
+}
+
+.sun-icon {
+  font-size: 50px;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0.9); /* Black with 70% opacity */
+  border: none;
+  border-radius: 30px;
+  height: 20px;
+  width: 180px;
+  padding: 20px;
+  color: white;
+}
+
+.city {
+  padding-top: 10px;
+}
+
+.weather-info {
+  padding: 28px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.temp-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.weather-icon { 
+  font-size: 60px;
+}
